@@ -8,6 +8,7 @@ import {Spinner} from './components/Spinner';
 import {Search} from './components/Search';
 import {Alert} from './components/Alert';
 import {About} from './pages/About';
+import {User} from './pages/User';
 
 export class App extends Component {
     state = {
@@ -69,6 +70,11 @@ export class App extends Component {
                                 exact
                                 path='/about'
                                 component={About}
+                            />
+                            <Route
+                                exact
+                                path='/user/:login'
+                                component={User}
                             />
                         </Switch>
                     </div>
